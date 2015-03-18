@@ -1,0 +1,64 @@
+{% extends "registration_base.html" %}
+{% load setclass %}
+{% load staticfiles %}
+
+{% block heading %}
+
+  Eligibility criteria&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+  Step 1 of 9
+
+{% endblock heading %}
+
+{% block content %}
+
+  <p class="lead">Does your group meet all of these criteria?</p>
+
+  <ul>
+    <li>
+      <i class="fa fa-arrow-circle-right fa-lg fa-fw red"></i>&nbsp;
+      The group has a progressive focus</li>
+    <li>
+      <i class="fa fa-arrow-circle-right fa-lg fa-fw red"></i>&nbsp;
+      The group is commited to social justice</li>
+    <li>
+      <i class="fa fa-arrow-circle-right fa-lg fa-fw red"></i>&nbsp;
+      The group is not-for-profit</li>
+
+  </ul>
+
+  <p> It doesn't matter what your area or issue of primary focus is, but you must meet these criteria to use eConvenor.
+
+  <div class="pull-right">
+    <a href="{% url 'qualify' 'step0' %}" class="btn btn-default">
+      <i class="fa fa-arrow-circle-left fa-lg fa-fw"></i>&nbsp;
+      Back
+    </a>
+    <a href="{% url 'qualify' 'step2' %}" class="btn btn-primary">
+      <i class="fa fa-check-circle fa-lg fa-fw"></i>&nbsp;
+      Yes
+    </a>
+    <button type="button" class="btn btn-primary" id="exit_button">
+      <i class="fa fa-times-circle fa-lg fa-fw"></i>&nbsp;
+      No
+    </button>
+  </div>
+
+  <div class="modal-data" id="exit_modal_title">
+    <i class="fa fa-times-circle fa-lg"></i>&nbsp;
+    You are not eligible for an eConvenor account
+  </div>
+  <div class="modal-data" id="exit_modal_body">
+    <p>Your group must be progressive, committed to social justice and not-for-profit for you to set up an eConvenor account.<p>
+  </div>
+  <div class="modal-data" id="exit_modal_button">
+    <i class="fa fa-arrow-circle-right fa-lg fa-fw"></i>&nbsp;
+    Exit eligibility check
+  </div>
+  <div class="modal-data" id="exit_modal_button_target">
+    {% url 'index' %}
+  </div>
+
+
+
+{% endblock content %}
+
