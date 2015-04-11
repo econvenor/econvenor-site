@@ -1,0 +1,10 @@
+{
+  "name": "econvenor-site",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.3.4",
+    "fontawesome": "~4.3.0",
+    "magnific-popup": "~1.0.0"
+  }
+}
