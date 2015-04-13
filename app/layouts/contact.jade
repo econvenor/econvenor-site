@@ -1,0 +1,29 @@
+extends ./landing_base.jade
+
+block seo
+  title eConvenor  |  Contact
+  meta(name="description", content="Contact eConvenor.")
+
+block content
+
+    // PAGE HEADER
+    // ==================================================
+    div(class="jumbotron divider general")
+      div(class="container")
+        h1(class="text-center") Contact eConvenor
+
+    // BODY
+    // ==================================================
+    div(class="section general")
+      div(class="container")
+        div(class="row")
+          div(class="col-md-10")
+            h2(class="red") Email
+            p mail@econvenor.org
+            h2(class="red") Encrypted email
+            p.
+              If you know how to, we encourage you to encrypt email to us with 
+              our <a href='public-key' target="_blank">public key</a>.
+            p.
+              If you don't know how to send encrypted email, sending us normal 
+              email is just fine.
