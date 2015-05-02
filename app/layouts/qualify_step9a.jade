@@ -1,0 +1,35 @@
+extends ./registration_base.jade
+
+block heading
+  h1
+    span(class="fa-stack fa-md fa-fw")
+      i(class="fa fa-circle fa-stack-2x white")
+      i(class="fa fa-star fa-stack-1x red") &nbsp;
+    | Eligibility check
+
+block subheading
+  | The last step&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Step 9 of 9
+
+block content
+
+  p(class="lead") Please confirm the following to move on to setting up your account:
+    ul
+      li
+        i(class="fa fa-arrow-circle-right fa-lg fa-fw red") &nbsp;
+        | I have answered the eligibility check questions honestly
+      li
+        i(class="fa fa-arrow-circle-right fa-lg fa-fw red") &nbsp;
+        | I agree to eConvenor's terms and conditions
+
+  div(class="pull-right")
+    a(href="qualify_step8a.html" class="btn btn-default")
+      i(class="fa fa-arrow-circle-left fa-lg fa-fw") &nbsp;
+      | Back
+
+    a(href="index.html" class="btn btn-primary")
+      i(class="fa fa-times-circle fa-lg fa-fw") &nbsp;
+      | Quit
+
+    a(href="register_trial.html" class="btn btn-primary")
+      i(class="fa fa-check-circle fa-lg fa-fw") &nbsp;
+      | I agree

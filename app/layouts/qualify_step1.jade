@@ -1,0 +1,59 @@
+extends ./registration_base.jade
+
+block heading
+  h1
+    span(class="fa-stack fa-md fa-fw")
+      i(class="fa fa-circle fa-stack-2x white")
+      i(class="fa fa-star fa-stack-1x red") &nbsp;
+    | Eligibility check
+
+block subheading
+  |Eligibility criteria&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Step 1 of 9
+
+
+block content
+
+  p(class="lead") Does your group meet all of these criteria?
+
+  ul
+    li
+      i(class="fa fa-arrow-circle-right fa-lg fa-fw red") &nbsp;
+      | The group has a progressive focus
+    li
+      i(class="fa fa-arrow-circle-right fa-lg fa-fw red") &nbsp;
+      | The group is commited to social justice
+    li
+      i(class="fa fa-arrow-circle-right fa-lg fa-fw red") &nbsp;
+      | The group is not-for-profit
+
+    p It doesn't matter what your area or issue of primary focus is, but you must meet these criteria to use eConvenor.
+
+  div(class="pull-right")
+    a(href="qualify_step0.html", class="btn btn-default")
+      i(class="fa fa-arrow-circle-left fa-lg fa-fw") &nbsp;
+      | Back
+
+    a(href="qualify_step2.html", class="btn btn-primary")
+      i(class="fa fa-check-circle fa-lg fa-fw") &nbsp;
+      | Yes
+
+    button(type="button", class="btn btn-primary", id="exit_button")
+      i(class="fa fa-times-circle fa-lg fa-fw") &nbsp;
+      | No
+
+
+  div(class="modal-data", id="exit_modal_title")
+    i(class="fa fa-times-circle fa-lg") &nbsp;
+    | You are not eligible for an eConvenor account
+
+  div(class="modal-data", id="exit_modal_body")
+    p.
+      Your group must be progressive, committed to social justice and 
+      not-for-profit for you to set up an eConvenor account.
+
+  div(class="modal-data", id="exit_modal_button")
+    i(class="fa fa-arrow-circle-right fa-lg fa-fw") &nbsp;
+    | Exit eligibility check
+
+  div(class="modal-data", id="exit_modal_button_target")
+    a(href="index.html")

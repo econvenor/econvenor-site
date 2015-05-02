@@ -1,0 +1,119 @@
+doctype html
+
+html(lang="en")
+
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="description", content="")
+    meta(name="author", content="")
+
+    link(rel="shortcut icon"
+      href='images/econvenor-favicon-v1.ico')
+
+    title eConvenor - Your virtual convenor
+
+    // build:css styles/vendor.css
+    // bower:css
+    link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='/bower_components/fontawesome/css/font-awesome.css')
+    link(rel='stylesheet', href='/bower_components/magnific-popup/dist/magnific-popup.css')
+    // endbower
+    // endbuild
+
+    // build:css styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
+
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  body
+
+  //NAVBAR
+  //================================================== --
+
+  div(class="navbar navbar-static-top")
+    div(class="container")
+      span(class="navbar-brand")
+        a(href="index.html")
+          img(src='images/econvenor-logo-v1l.png', width="200", height="45" alt="An image of the eConvenor logo")
+
+  //MAIN SECTION
+  //==================================================
+
+  div(class="section-registration")
+    div(class="container")
+      div(class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2")
+        div(class="panel panel-default panel-register")
+          div(class="panel-heading red")
+            h1
+              block heading
+
+          div(class="panel-heading")
+            h2
+              block subheading
+
+          div(class="panel-body")
+            block content
+
+
+  //MODAL
+  //==================================================
+
+  div(class="modal fade" id="exit_modal" tabindex="-1" role="dialog"
+    aria-labelledby="ExitNotification" 
+    aria-hidden="true"
+    aria-describedby="Exit the qualification process")
+    div(class="modal-dialog modal-lg")
+      div(class="modal-content")
+        div(class="modal-header")
+          h1(class="modal-title", id="modal_title")
+
+        div(class="modal-body", id="modal_body")
+
+        div(class="modal-footer")
+          button(type="button", class="btn btn-default",
+            data-dismiss="modal")
+              i(class="fa fa-times-circle fa-lg fa-fw")&nbsp;
+              | Close this message
+
+          a(type="button", class="btn btn-primary", id="modal_button")
+
+  // TODO: Include the test for JS blockers
+  // include no_javascript.html
+
+  // JAVASCRIPT
+  // ==================================================
+
+  // build:js scripts/vendor.js
+  // bower:js
+  script(src='/bower_components/jquery/dist/jquery.js')
+  script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
+  script(src='/bower_components/magnific-popup/dist/jquery.magnific-popup.js')
+  // endbower
+  // endbuild
+
+  script.
+    
+    $( function(){
+      $( ".modal-data" ).hide();
+    });
+
+    $(document).on("click", "#exit_button", function(event){
+      var exit_title = $("#exit_modal_title").html();
+      var exit_body = $("#exit_modal_body").html();
+      var exit_button = $("#exit_modal_button").html();
+      var exit_button_target = $("#exit_modal_button_target").html();
+      console.log( exit_button);
+      $('#modal_title').html( exit_title );
+      $('#modal_body').html( exit_body );
+      $('#modal_button').html( exit_button );
+      $('#modal_button').attr( 'href', exit_button_target );
+      $('#exit_modal').modal();
+    });

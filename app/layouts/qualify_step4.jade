@@ -1,0 +1,47 @@
+extends ./registration_base.jade
+
+block heading
+  h1
+    span(class="fa-stack fa-md fa-fw")
+      i(class="fa fa-circle fa-stack-2x white")
+      i(class="fa fa-star fa-stack-1x red") &nbsp;
+    | Eligibility check
+
+block subheading
+  | Unions and political parties&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Step 4 of 9
+
+
+block content
+
+  p(class="lead").
+    Is your group a political party or trade union in a high-income, reasonably 
+    democratic country?
+
+  p.
+    If it is, you must pay a fee to use eConvenor. This will help us provide 
+    the service to less well-funded groups for free. Click the "Yes" button 
+    below.
+
+
+  p(class="lead").
+    A note for unions and political parties in lower-income and less democratic 
+    countries
+
+  p.
+    We understand that you won't have access to as many resources as similar 
+    organisations in high-income and/or more democratic countries, so we'd 
+    love you to to use eConvenor for free. Click the "No" button below to 
+    continue.
+
+  div(class="pull-right")
+    a(href="qualify_step3.html", class="btn btn-default")
+      i(class="fa fa-arrow-circle-left fa-lg fa-fw") &nbsp;
+      | Back
+
+    a(href="qualify_step5a.html", class="btn btn-primary")
+      i(class="fa fa-check-circle fa-lg fa-fw") &nbsp;
+      | Yes
+
+    a(href="qualify_step5.html", class="btn btn-primary")
+      i(class="fa fa-times-circle fa-lg fa-fw") &nbsp;
+      | No
