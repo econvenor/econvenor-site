@@ -1,18 +1,42 @@
 extends ./landing_base.jade
 
 block seo
-  title eConvenor  |  A virtual convenor for activist groups/title
-  meta(name='description', content='A virtual convenor for progressive activist groups. Built by activists for activists!')
+  title eConvenor  |  Common questions
+  meta(name="description", content="Answers to the most common questions about eConvenor.")
 
 block content
 
+
   // HERO
   // ================================================== 
-  #hero.jumbotron
+  div(id='hero', class='jumbotron')
     div(class='container')
-      h1(class='text-center') Take the hard work out of organising your group.
-      h2(class='text-center') A free tool for the progressive activist community.
+      h1(class='text-center') Activists, organised.
+      h2(class='text-center') Have great meetings and get things done.
+      h2(class='text-center') Built by activists for activists and it's free for small groups.
+      br  
+      div(class='text-center')
+        a(href='qualify_step1.html')
+          button(type='button', class='btn btn-primary-outline')
+            i(class='fa-fw fa fa-bookmark fa-lg')
+            &nbsp;Get a free account
+  
+  // DIVIDER A
+  //==================================================
+  div(class='dividera')
+    div(class='container')
+      br
+      h2(class='text-center')
+        i(class='fa fa-arrow-down')
+      br
+      br
 
+  // RIBBON
+  // ==================================================
+  .ribbon
+    .container
+      h3(class='text-center') A huge eConvenor upgrade is in the works!
+      h3(class='text-center') You'll notice changes throughout May and June.
 
   // SECTION 1A
   // ==================================================
@@ -74,12 +98,10 @@ block content
                   a(class='popup-image', href='images/landing/agendas-screenshot-3-large.png')
                     img(src='images/landing/agendas-screenshot-3-small.png', alt='Agenda screenshot 3')
 
-            
-  .dividing-line
-    
+
   // SECTION 1B
   // ==================================================
-  div(id='section1b', class='section')
+  div(id='section1b', class='sectionb')
     div(class='container')
       div(class='row')
         div(class='col-md-12')
@@ -154,8 +176,7 @@ block content
               i(class='fa-fw fa fa-file-pdf-o fa-lg') 
               &nbsp; See some example minutes
 
-  .dividing-line
-  
+
   // SECTION 1C
   // ==================================================
   div(id='section1c', class='section')
@@ -213,7 +234,7 @@ block content
 
   // DIVIDER 1
   //==================================================
-  div(class='jumbotron divider red-background')
+  div(class='jumbotron dividerb red-background')
     div(class='container')
       h1(class='text-center') Built by activists, for activists.
       h2(class='text-center').
@@ -267,7 +288,7 @@ block content
 
   // DIVIDER 3
   // ==================================================
-  div(class='jumbotron divider red-background')
+  div(class='jumbotron dividerc red-background')
     div(class='container')
       h1(class='text-center') Sometimes the best person for the job is a computer.
       h2(class='text-center').
@@ -379,11 +400,11 @@ block content
 
   // DIVIDER 4
   // ================================================== 
-  div(class='jumbotron divider black-background', id='divider4')
+  div(class='jumbotron dividerd black-background', id='divider4')
     div(class='container')
       div(class='text-center')
         h1 Keep your group in the loop with eConvenor.
         a(href='qualify_step1.html')
-          button(type='button', class='btn btn-primary')
+          button(type='button', class='btn btn-primary-outline')
             i(class='fa-fw fa fa-bookmark fa-lg')
             &nbsp;Get a free account

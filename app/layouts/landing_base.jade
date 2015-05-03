@@ -9,7 +9,7 @@ html(lang='en')
 
     block seo
 
-    link(rel='shortcut icon' href='images/econvenor-favicon-v1.ico')
+    link(rel='shortcut icon', href='images/econvenor-favicon-v1.ico')
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
@@ -34,29 +34,20 @@ html(lang='en')
 
     // NAVBAR
     // ==================================================
-      
-    .navbar.navbar-fixed-top
+
+    .navbar.navbar-static-top
       .container
         span(class='navbar-brand')
-            a(href='index.html')
-              img(src='images/econvenor-logo-v1l.png', width='200', height='45', alt='An image of the eConvenor logo')
+          a(href='index.html')
+            img(src='images/logo white.png', width='200', height='45', alt='An image of the eConvenor logo')
 
         .pull-right
           a(href='qualify_step1.html')
-            button(type="button" class="btn btn-primary") Sign up
-          a(href='login.html')
-            button(type="button" class="btn btn-primary") Sign in
+            button(type="button" class="btn btn-primary-outline") Sign up
+          a(href='login')
+            button(type="button" class="btn") Sign in
 
-    // RIBBON
-    // ==================================================
-    .ribbon
-      .container
-        .message-container
-          i(class="fa fa-map-marker fa-lg")
-          &nbsp;&nbsp; Are you in Melbourne, Australia? Come and 
-          a(href='hack.html') hack on eConvenor with us
-          on Saturday 14th March 2015!
-    
+
     // CONTENT
     // ==================================================
     block content
@@ -93,8 +84,6 @@ html(lang='en')
             p
               a(href='pricing.html') Unions & political parties
 
-
-    // JAVASCRIPT
     // ==================================================
 
     <!-- build:js scripts/vendor.js -->

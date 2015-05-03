@@ -32,7 +32,7 @@ html(lang="en")
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-  body
+body
 
   //NAVBAR
   //================================================== --
@@ -41,12 +41,12 @@ html(lang="en")
     div(class="container")
       span(class="navbar-brand")
         a(href="index.html")
-          img(src='images/econvenor-logo-v1l.png', width="200", height="45" alt="An image of the eConvenor logo")
+          img(src='images/logo white.png', width="200", height="45" alt="An image of the eConvenor logo")
 
   //MAIN SECTION
   //==================================================
 
-  div(class="section-registration")
+  div(class="registration")
     div(class="container")
       div(class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2")
         div(class="panel panel-default panel-register")
@@ -62,56 +62,56 @@ html(lang="en")
             block content
 
 
-  //MODAL
-  //==================================================
+    //MODAL
+    //==================================================
 
-  div(class="modal fade" id="exit_modal" tabindex="-1" role="dialog"
-    aria-labelledby="ExitNotification" 
-    aria-hidden="true"
-    aria-describedby="Exit the qualification process")
-    div(class="modal-dialog modal-lg")
-      div(class="modal-content")
-        div(class="modal-header")
-          h1(class="modal-title", id="modal_title")
+    div(class="modal fade" id="exit_modal" tabindex="-1" role="dialog"
+      aria-labelledby="ExitNotification" 
+      aria-hidden="true"
+      aria-describedby="Exit the qualification process")
+      div(class="modal-dialog modal-lg")
+        div(class="modal-content")
+          div(class="modal-header")
+            h1(class="modal-title", id="modal_title")
 
-        div(class="modal-body", id="modal_body")
+          div(class="modal-body", id="modal_body")
 
-        div(class="modal-footer")
-          button(type="button", class="btn btn-default",
-            data-dismiss="modal")
-              i(class="fa fa-times-circle fa-lg fa-fw")&nbsp;
-              | Close this message
+          div(class="modal-footer")
+            button(type="button", class="btn btn-default",
+              data-dismiss="modal")
+                i(class="fa fa-times-circle fa-lg fa-fw")&nbsp;
+                | Close this message
 
-          a(type="button", class="btn btn-primary", id="modal_button")
+            a(type="button", class="btn btn-primary", id="modal_button")
 
-  // TODO: Include the test for JS blockers
-  // include no_javascript.html
+// TODO: Include the test for JS blockers
+// include no_javascript.html
 
-  // JAVASCRIPT
-  // ==================================================
+// JAVASCRIPT
+// ==================================================
 
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  script(src='/bower_components/jquery/dist/jquery.js')
-  script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
-  <!-- endbower -->
-  <!-- endbuild -->
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+script(src='/bower_components/jquery/dist/jquery.js')
+script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
+<!-- endbower -->
+<!-- endbuild -->
 
-  script.
-    
-    $( function(){
-      $( ".modal-data" ).hide();
-    });
+script.
+  
+  $( function(){
+    $( ".modal-data" ).hide();
+  });
 
-    $(document).on("click", "#exit_button", function(event){
-      var exit_title = $("#exit_modal_title").html();
-      var exit_body = $("#exit_modal_body").html();
-      var exit_button = $("#exit_modal_button").html();
-      var exit_button_target = $("#exit_modal_button_target").html();
-      console.log( exit_button);
-      $('#modal_title').html( exit_title );
-      $('#modal_body').html( exit_body );
-      $('#modal_button').html( exit_button );
-      $('#modal_button').attr( 'href', exit_button_target );
-      $('#exit_modal').modal();
-    });
+  $(document).on("click", "#exit_button", function(event){
+    var exit_title = $("#exit_modal_title").html();
+    var exit_body = $("#exit_modal_body").html();
+    var exit_button = $("#exit_modal_button").html();
+    var exit_button_target = $("#exit_modal_button_target").html();
+    console.log( exit_button);
+    $('#modal_title').html( exit_title );
+    $('#modal_body').html( exit_body );
+    $('#modal_button').html( exit_button );
+    $('#modal_button').attr( 'href', exit_button_target );
+    $('#exit_modal').modal();
+  });

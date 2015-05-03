@@ -11,9 +11,9 @@ body {
   color: #555555;
   font-family: 'Body', Helvetica, Arial, sans-serif;
   font-size: 18px;
-  padding-top: 75px;
-  margin-bottom: 232px;
-  background-image: url(../images/texture.png);
+  padding-top: 0px;
+  margin-bottom: 0px;
+  background-image: url(../images/magentameeting.jpg);
 }
 
 .orange {
@@ -97,7 +97,7 @@ body {
   margin-bottom: 0px;
   padding-bottom: 0px;
   border-bottom: 0px solid transparent;
-  background-color: #ffffff;
+  background-color: none;
 }
 
 .navbar .container {
@@ -118,30 +118,15 @@ body {
 }
 
 
+
 /* RIBBON
 -------------------------------------------------- */
 
 .ribbon {
   color: #ffffff;
   padding-top: 12px;
-  padding-bottom: 7px;
-  background-color: #ff0066;
-}
-
-.ribbon .message-container {
-  display: table;
-  width: auto;
-  margin: 0 auto;
-}
-
-.ribbon a {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.ribbon a:hover,
-.ribbon a:focus {
-  color: #ffb8d4;
+  padding-bottom: 20px;
+  background-color: #1a1a1a;
 }
 
 
@@ -172,6 +157,13 @@ body {
   border-color: #555555;
 }
 
+.btn-primary-outline {
+  color: #ffffff;
+  background-color: #ff0066;
+  border-color: white;
+}
+
+
 .btn-primary {
   color: #ffffff;
   background-color: #ff0066;
@@ -195,46 +187,48 @@ body {
 
 /* JUMBOTRONS
 -------------------------------------------------- */
+.jumbotron {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: transparent;
+}
 
 .jumbotron h1 {
   font-family: 'Jumbotron', Helvetica, Arial, sans-serif;
   font-size: 63px;
-  color: #ffffff;
+  color: white;
   margin: 30px 70px 40px 70px;
 }
 
-.jumbotron {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-  .container .jumbotron {
-    padding-right: 60px;
-    padding-left: 60px;
-  }
 
 
 /* HERO
 -------------------------------------------------- */
 
 #hero {
-  background-color: #1a1a1a;
+  background-color: none;
+  opacity: 1.0;
+  margin-top: 50px;
   margin-bottom: 0px;
-  background-image: url(../images/hero.png);
-  background-repeat: no-repeat;
   position: relative;
   width: 100%;
   background-size: auto 100%;
   background-position: center;
 }
 
+#hero h1 {
+  color: white;
+}
+
 #hero h2 {
-  color: #909090;
+  color: white;
 }
 
 @media (max-width: 1000px) {
   #hero h1 {
     padding-top: 10px;
     font-size: 54px;
+    color: white;
   }
   #hero h2 {
     font-size: 30px;
@@ -250,6 +244,7 @@ body {
     font-size: 28px;
   }
 }
+
 
 
 /* CAROUSELS
@@ -288,20 +283,58 @@ body {
 
 /* DIVIDERS
 -------------------------------------------------- */
-
-.divider {
+.dividera {
   margin-bottom: 0px;
-  background-image: url(../images/hero.png);
+  background-color: none;
 }
 
-.divider h1 {
+.dividera h2 {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.dividerb {
+  margin-bottom: 0px;
+  background-image: url(../images/redpnp.jpg);
+}
+
+.dividerb h1 {
   font-size: 2.5em;
   margin: 0px 40px 0px 40px;
 }
 
-.divider h2 {
+.dividerb h2 {
   font-size: 1.5em;
-  color: #909090;
+  color: white;
+  margin-bottom: 10px;
+}
+.dividerc {
+  margin-bottom: 0px;
+  background-image: url(../images/bwbookcomputer.jpg);
+}
+.dividerc h1 {
+  font-size: 2.5em;
+  margin: 0px 40px 0px 40px;
+}
+
+.dividerc h2 {
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 10px;
+}
+.dividerd {
+  margin-bottom: 0px;
+  background-image: url(../images/magentanotes.jpg);
+}
+.dividerd h1 {
+  font-size: 2.5em;
+  margin: 0px 40px 0px 40px;
+}
+
+.dividerd h2 {
+  font-size: 1.5em;
+  color: white;
   margin-bottom: 10px;
 }
 
@@ -465,11 +498,16 @@ li p.lead {
 -------------------------------------------------- */
 
 .section {
-  background-image: url(../images/texture.png);
+  background-color: white;
   padding-top: 50px;
   padding-bottom: 70px;
 }
 
+.sectionb {
+  background-image: url('../images/texture.png');
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
 .section .btn {
   margin: 20px 0 0 12px;
 }
@@ -497,7 +535,7 @@ li p.lead {
 -------------------------------------------------- */
 
 .footer {
-  background-color: #666666;
+  background-color: #333333;
   padding: 60px 0 50px 0;
   width: 100%;
   position:absolute;
@@ -511,7 +549,7 @@ li p.lead {
 }
 
 .footer p.lead{
-  color: #111111;
+  color: #ffffff;
 }
 
 .footer a {
@@ -523,6 +561,7 @@ li p.lead {
   color: #ffffff;
   text-decoration: none;
 }
+
 
 
 /* LIGHTBOX - MAGNIFIC POPUP
@@ -621,13 +660,14 @@ li p.lead {
 
 /* REGISTRATION PAGES
 -------------------------------------------------- */
-
-.navbar-static-top {
+.registration{
+  background-image: url(../images/bwmarch.jpg);
   margin-top: -75px;
+  padding-bottom: 150px;
 }
-
 .panel {
   border-radius: 0px;
+  border: 0px;
   margin-top: 40px;
 }
 
