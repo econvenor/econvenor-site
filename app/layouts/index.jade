@@ -1,8 +1,8 @@
 extends ./landing_base.jade
 
 block seo
-  title eConvenor  |  Common questions
-  meta(name="description", content="Answers to the most common questions about eConvenor.")
+  title eConvenor  |  A tool to get activists organised
+  meta(name='description', content='A organising tool for progressive activist groups. Built by activists for activists!')
 
 block content
 
@@ -11,7 +11,7 @@ block content
   // ================================================== 
   div(id='hero', class='jumbotron')
     div(class='container')
-      h1(class='text-center') Activists, organised.
+      h1(class='text-center') Activists, get organised.
       h2(class='text-center') Have great meetings and get things done.
       h2(class='text-center') Built by activists for activists and it's free for small groups.
       br  
@@ -20,16 +20,13 @@ block content
           button(type='button', class='btn btn-primary-outline')
             i(class='fa-fw fa fa-bookmark fa-lg')
             &nbsp;Get a free account
-  
-  // DIVIDER A
-  //==================================================
-  div(class='dividera')
-    div(class='container')
-      br
-      h2(class='text-center')
-        i(class='fa fa-arrow-down')
-      br
-      br
+        br
+        br
+        h2(class='text-center')
+          i(class='fa fa-arrow-down')
+        br
+        br
+
 
   // RIBBON
   // ==================================================
@@ -38,20 +35,74 @@ block content
       h3(class='text-center') A huge eConvenor upgrade is in the works!
       h3(class='text-center') You'll notice changes throughout May and June.
 
-  // SECTION 1A
+  // SECTION 1B
   // ==================================================
   div(id='section1a', class='section')
     div(class='container')
       div(class='row')
         div(class='col-md-12')
+          h1(class='red text-center') What will eConvenor do for your group?
+
+      div(class='row')
+        .col-sm-4
+          p(class='lead red')
+            span(class='fa-stack')
+              i(class='fa fa-circle fa-stack-2x red')
+              i(class='fa fa-clock-o fa-xl fa-stack-1x fa-inverse')
+            &nbsp;
+            | Save you time
+          p.
+            The work of following people up will happen automatically, and your
+            agenda will turn into a minutes template on it's own. You'll have
+            more time left over for the real work.
+        .col-sm-4
+          p(class='lead red')
+            span(class='fa-stack')
+              i(class='fa fa-circle fa-stack-2x red')
+              i(class='fa fa-bolt fa-lg fa-stack-1x fa-inverse')
+            &nbsp;
+            | Make you more effective
+          p.
+            eConvenor will make sure you are clear about your decisions and 
+            tasks, and prevent tasks being unassgned or forgotten. You'll get
+            more done.
+        .col-sm-4
+          p(class='lead red')
+            span(class='fa-stack')
+              i(class='fa fa-check-circle fa-stack-2x red')
+            &nbsp;
+            | Nudge you to better meetings
+          p.
+            eConvenor takes good meeting practices and wraps them around your
+            agendas and minute taking. It will remind you to assign tasks to
+            people (not an unaccounted-for to-do list), make you record your
+            decisions and plan your meetings better.
+
+
+  // DIVIDER 1
+  // ==================================================
+  div(class='jumbotron dividerc red-background')
+    div(class='container')
+      h1(class='text-center') Sometimes the best person for the job is a computer.
+      h2(class='text-center').
+        eConvenor does its work on time, has high standards and never forgets 
+        anything.
+
+
+  // SECTION 1A
+  // ==================================================
+  div(id='section1b', class='section')
+    div(class='container')
+      div(class='row')
+        div(class='col-md-12')
           h1(class='red text-center') Clear, well-organised agendas
-          p(class='lead').
-            A good agenda is the foundation for a good meeting. eConvenor
-            makes compiling and distributing an excellent agenda easy,
-            whether you're a veteran or you've never made one before.
 
       div(class='row')
         div(class='col-md-5')
+          p(class='lead').
+            A good agenda is the foundation for a good meeting. eConvenor
+            makes excellent agendas easy,
+            whether you're a veteran or a new activist.
           ul(class='fa-ul')
             li
               i(class='fa-li fa fa-list fa-lg red')
@@ -62,12 +113,6 @@ block content
             li
               i(class='fa-li fa fa-envelope-o fa-lg red')
               | Emails it straight to your group
-            li
-              i(class='fa-li fa fa-align-left fa-lg red')
-              | Includes a meeting summary in the email
-            li
-              i(class='fa-li fa fa-cubes fa-lg red')
-              | Designed to encourage productive meetings
             li
               i(class='fa-li fa fa-clock-o fa-lg red')
               | Calculates the meeting end time
@@ -101,31 +146,28 @@ block content
 
   // SECTION 1B
   // ==================================================
-  div(id='section1b', class='sectionb')
+  div(id='section1a', class='sectionb')
     div(class='container')
       div(class='row')
         div(class='col-md-12')
           h1(class='red text-center') Your group's best-ever minutes
-          p(class='lead').
-            Meeting minutes are so important, yet often overlooked or rushed.
-            eConvenor makes it quick, easy and surprisingly painless to 
-            produce the best minutes your group has ever had.
 
       div(class='row')
         div(class='col-md-5 visible-xs visible-sm')
+          p(class='lead').
+            Meeting minutes are so important.
+            eConvenor makes it quick, easy and painless to 
+            produce great minutes.
           ul(class='fa-ul')
             li
               i(class='fa-li fa fa-repeat fa-lg red')
               | Agendas automatically create minutes templates
             li
-              i(class='fa-li fa fa-copy fa-lg red')
-              | Templates have special sections for tasks and decisions
-            li
               i(class='fa-li fa fa-file-pdf-o fa-lg red')
-              | eConvenor turns minutes into a PDF document and emails them out
+              | eConvenor turns minutes into a PDF and emails them out
             li
               i(class='fa-li fa fa-list fa-lg red')
-              | Tasks assigned are summarised in the PDF and the email body
+              | Tasks are summarised in the PDF and the email
             li
               i(class='fa-li fa fa-cubes fa-lg red')
               | eConvenor's minutes design is based on 30 years of experience
@@ -149,19 +191,20 @@ block content
                     img(src='images/landing/minutes-screenshot-3-small.png', alt='Agenda screenshot 3')
 
         div(class='col-md-4 pull-right visible-md visible-lg')
+          p(class='lead').
+            Meeting minutes are so important.
+            eConvenor makes it quick, easy and painless to 
+            produce great minutes.
           ul(class='fa-ul')
             li
               i(class='fa-li fa fa-repeat fa-lg red') 
               | Agendas automatically create minutes templates
             li
-              i(class='fa-li fa fa-copy fa-lg red') 
-              | Templates have special sections for tasks and decisions
-            li
               i(class='fa-li fa fa-file-pdf-o fa-lg red')
-              | eConvenor turns minutes into a PDF document and emails them out
+              | eConvenor turns minutes into a PDF and emails them out
             li
               i(class='fa-li fa fa-list fa-lg red')
-              | Tasks assigned are summarised in the PDF and the email body
+              | Tasks are summarised in the PDF and the email
             li
               i(class='fa-li fa fa-cubes fa-lg red')
               | eConvenor's minutes design is based on 30 years of experience
@@ -179,40 +222,34 @@ block content
 
   // SECTION 1C
   // ==================================================
-  div(id='section1c', class='section')
+  div(id='section1b', class='section')
     div(class='container')
       div(class='row')
         div(class='col-md-12')
           h1(class='red text-center') Automatic task coordination
-          p(class='lead').
-            Do you wish that someone else could monitor the tasks assigned
-            within your group and remind people when they need to be done? 
-            eConvenor will do that for you.
 
       div(class='row')
         div(class='col-md-5')
+          p(class='lead').
+            Do you wish that someone else could remind people to do what they
+            said they'd do? 
+            eConvenor will do that.
           ul(class='fa-ul')
             li
               i(class='fa-li fa fa-search-plus fa-lg red')
               | Collects and tracks tasks assigned in meetings
             li
               i(class='fa-li fa fa-tags fa-lg red')
-              | Emails reminders to people when their tasks are nearly due, and
-              | again if they become overdue
+              | Emails reminders to people when their tasks are due
             li
               i(class='fa-li fa fa-check fa-lg red')
               | Participants can manage their own tasks, without logging in
             li
-              i(class='fa-li fa fa-plus-circle fa-lg red')
-              | Tasks can be added any time
-            li
               i(class='fa-li fa fa-list fa-lg red')
-              | Lists of outstanding, overdue and completed tasks appear in 
-              | agendas and minutes
+              | Lists of tasks appear for review in agendas and minutes
             li
               i(class='fa-li fa fa-star fa-lg red')
-              | eConvenor handles the often-awkward job of reminding people 
-              | about their tasks for you
+              | eConvenor sends task reminders so you don't have to
 
         div(class='col-md-7')
           div(class='spacer visible-md visible-lg')
@@ -232,179 +269,42 @@ block content
                   a(class='popup-image', href='images/landing/tasks-screenshot-3-large.png')
                     img(src='images/landing/tasks-screenshot-3-small.png', alt='Agenda screenshot 3')
 
-  // DIVIDER 1
+  // DIVIDER 3
   //==================================================
   div(class='jumbotron dividerb red-background')
     div(class='container')
-      h1(class='text-center') Built by activists, for activists.
-      h2(class='text-center').
-        eConvenor is a free service to help activist groups everywhere be more 
-        effective.
+      div(class='text center')
+        h1(class='text-center') Built by activists, for activists.
+        h2(class='text-center').
+          eConvenor is a free service to help activist groups everywhere be more 
+          effective.
 
 
-  // SECTION 2
-  // ==================================================
-  div(id='section2', class='section')
+  // SECTION M
+  // =================================================
+  div(class='section')
     div(class='container')
-
-      div(class='row')
-        div(class='col-xs-12')
-          h1(class='red') Who is eConvenor for?
+      div(class='jumbotronm')
+        div(class='row')
+          h1(class='text-center') The story behind eConvenor
           p(class='lead').
-            eConvenor is for grassroots campaigns, non-government organisations 
-            (NGOs), progressive service providers and activist groups. 
-            We built eConvenor to make the world a better place.
-
-          h2 eConvenor is for groups like these:
-
-
-      div(class='row')
-        .col-sm-4
-          p(class='lead red')
-            i(class='fa fa-check-circle fa-2x red') &nbsp;
-            | A rights collective
-          p.
-            in the Philippines which is trying to improve wheelchair access to public 
-            buildings in their local area. They have 12 activists and 
-            no budget.
-
-        .col-sm-4
-          p(class='lead red')
-            i(class='fa fa-check-circle fa-2x red') &nbsp;
-            | A family violence crisis service
-          p.
-            in the UK which is run by 7 staff, who help 300 women every year. 
-            They have a volunteer board of directors.
-
-        .col-sm-4
-          p(class='lead red')
-            i(class='fa fa-check-circle fa-2x red') &nbsp;
-            | An anti-fracking campaign
-          p.
-            in Poland which has a national committee, local sub-committees and 
-            200 campaigners. Their budget stretches to printing posters 
-            and paying one part-time staff member.
-
-
-  // DIVIDER 3
-  // ==================================================
-  div(class='jumbotron dividerc red-background')
-    div(class='container')
-      h1(class='text-center') Sometimes the best person for the job is a computer.
-      h2(class='text-center').
-        eConvenor does its work on time, has high standards and never forgets 
-        anything.
-
-  // SECTION 4
-  // ==================================================
-  div(class='section', id='section4')
-    div(class='container')
-
-      div(class='row')
-        div(class='col-xs-12')
-          h1(class='red') eConvenor is free for most groups
+            We are two ordinary people living in Melbourne, who were frustrated
+            with the time we saw wasted because of poor organisation in activist and
+            organising groups we belonged to. Each group was reinventing the
+            wheel, and great ideas, skills and organisational memory were lost
+            each time an activist moved on.
           p(class='lead').
-            We aim to make the eConvenor service available as widely as we can. 
-            This means eConvenor is free for almost everyone, and we ask better 
-            funded groups to contribute financially.
-
-      div(class='row')
-
-        div(class='col-xs-12 col-sm-6')
-          h2 From each according to their means
-          ul(class='fa-ul')
-            li
-              i(class='fa-li fa fa-th fa-3x red')
-              ul
-                li
-                  p(class='lead red') Most groups
-                li
-                  p.
-                    Does your group have no budget or a tiny budget? eConvenor 
-                    was built for you! You can use eConvenor completely free.
-                    No obligation, no worries.
-
-            li
-              i(class='fa-li fa fa-th-large fa-3x red')
-              ul
-                li
-                  p(class='lead red') Groups which can afford to contribute
-                li
-                  p.
-                    Groups who feel that they can afford to 
-                    <a href='donate.html'>make a donation</a> in return for using 
-                    eConvenor should do so once each year.
-
-            li
-              i(class='fa-li fa fa-square fa-3x red')
-              ul
-                li
-                  p(class='lead red') Political parties and trade unions
-                li
-                  p.
-                    Political parties and trade unions in 
-                    high income countries who are progressive and committed 
-                    to social justice can use eConvenor <a href='pricing.html'>for a fee</a>.
-
-          p.
-            We rely on your honesty. We hope you will apply your ethics and 
-            contribute if you should. Donations help eConvenor improve.
-
-        div(class='col-xs-12 col-sm-6')
-          h2 Help build eConvenor
-          ul(class='fa-ul')
-              li
-                span(class='fa-li fa fa-stack fa-xl')
-                  i(class='fa fa-square fa-stack-2x red')
-                  i(class='fa fa-terminal fa-stack-1x fa-inverse')
-                ul
-                  li
-                    p(class='lead red') Got coding or web design skills?
-                  li
-                    p.
-                      Help us build eConvenor into a powerful tool which helps
-                      activist groups around the world. <a href='volunteer.html'>We're 
-                      looking for people</a> with skills in coding 
-                      (Python/Django), web development (HTML/CSS/ReactJS/JS), 
-                      web application security, graphic design and 
-                      writing/communications.
-              li
-                span(class='fa-li fa fa-stack fa-xl')
-                  i(class='fa fa-square fa-stack-2x red')
-                  i(class='fa fa-lightbulb-o fa-stack-1x fa-inverse')
-                ul
-                  li
-                    p(class='lead red').
-                      No specialist skills but lots of initiative?
-                  li
-                    p.
-                      There are always non-technical tasks which need doing, 
-                      and the only pre-requisite for working on them is an 
-                      ability to take some initiative and solve problems. If 
-                      you're the right sort of person, we'll find ways for you 
-                      to <a href='volunteer.html'>work on eConvenor</a> with us no 
-                      matter what your skills are.
-              li
-                span(class='fa-li fa fa-stack fa-xl')
-                  i(class='fa fa-square fa-stack-2x red')
-                  i(class='fa fa-bug fa-stack-1x fa-inverse')
-                ul
-                  li
-                    p(class='lead red') Got 5 minutes to report a bug?
-                  li
-                    p.
-                      If eConvenor does something unexpected while you're using 
-                      it, take a few minutes to tell us! We'll fix the problem 
-                      and eConvenor will be a better service for everyone as a 
-                      result.
-
-  // DIVIDER 4
-  // ================================================== 
-  div(class='jumbotron dividerd black-background', id='divider4')
-    div(class='container')
-      div(class='text-center')
-        h1 Keep your group in the loop with eConvenor.
-        a(href='qualify_step1.html')
-          button(type='button', class='btn btn-primary-outline')
-            i(class='fa-fw fa fa-bookmark fa-lg')
-            &nbsp;Get a free account
+            We were sure there had to be a better way. We looked around but
+            couldn't find anything that suited our needs or the activist budget.
+          p(class='lead').
+            Taking on the DIY spirit of activism and social movements, we 
+            learnt new skills and made our own organising tool. It will keep
+            your group organised, and most importantly, effective.
+          p(class='lead').
+            We really hope you like it as much as we do. Keep fighting!
+          p(class='lead') - Keira & Sky
+          p(class='text-center')
+            a(href='qualify_step1.html')
+              button(type='button', class='btn btn-primary-outline')
+                i(class='fa-fw fa fa-bookmark fa-lg')
+                &nbsp;Get a free account
