@@ -1,3 +1,6 @@
+- var prefix = (process.env.NODE_ENV == 'production') ? '' : process.env.NODE_ENV
+- var loginUrl = 'https://' + prefix + 'app.econvenor.org/login'
+
 doctype html
 
 html(lang='en')
@@ -46,7 +49,7 @@ html(lang='en')
         .pull-right
           a(href='qualify_step1.html')
             button(type="button" class="btn btn-primary-outline") Sign up
-          a(href='login')
+          a(href=loginUrl)
             button(type="button" class="btn") Sign in
 
 
@@ -65,7 +68,7 @@ html(lang='en')
               a(href='questions.html') Common questions
             p
               a(href='terms.html') Terms and conditions
-          
+
           .col-xs-3
             p(class='lead') About eConvenor
             p
