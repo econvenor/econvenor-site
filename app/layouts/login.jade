@@ -1,0 +1,23 @@
+extends ./landing_base.jade
+
+block seo
+  title eConvenor  |  Your virtual convenor
+  meta(name="description", content="Login to eConvenor")
+
+block content
+
+    // PAGE HEADER
+    // ==================================================
+    div(class="jumbotron divider general")
+      div(class="container")
+        h1(class="text-center") We're upgrading
+
+    // BODY
+    // ==================================================
+    div(class="section general")
+      div(class="container")
+        div(class="row")
+          div(class="col-md-10")
+            h2(class="red") The login page has moved
+            p It's now at <a href=#{loginUrl}>#{loginUrl}</a>
+            p If you have this page bookmarked, please update to the new link.
