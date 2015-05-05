@@ -1,0 +1,55 @@
+doctype html
+
+html(lang='en')
+
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    block seo
+
+    link(rel='shortcut icon', href='images/econvenor-favicon-v1.ico')
+
+    // Spacing comment to stop css bundling clobbering favicon when building
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='/bower_components/fontawesome/css/font-awesome.css')
+    link(rel='stylesheet', href='/bower_components/magnific-popup/dist/magnific-popup.css')
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    // build:css styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
+
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  body
+
+    // NAVBAR
+    // ==================================================
+
+    .navbar.navbar-static-top
+      .container
+        span(class='navbar-brand')
+          a(href='/')
+            img(src='images/logo white.png', width='200', height='45', alt='An image of the eConvenor logo')
+
+
+    // CONTENT
+    // ==================================================
+
+    .section
+      .container.text-center
+        span(class="fa-stack fa-4x" id="icon")
+          i(class="fa fa-circle fa-stack-2x red")
+          i(class="fa fa-exclamation fa-stack-1x fa-inverse")
+        block content
