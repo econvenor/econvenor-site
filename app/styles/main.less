@@ -16,6 +16,7 @@
 
 html {
   position: relative;
+  background-color: @dark-grey;
   min-width: 600px;
   min-height: 100%;
 }
@@ -25,7 +26,6 @@ body {
   font-family: 'Body', Helvetica, Arial, sans-serif;
   font-size: 18px;
   padding-top: 0px;
-  margin-bottom: 232px;
   background-color: @white;
 }
 
@@ -467,10 +467,12 @@ li p.lead {
 
 .footer {
   background-color: @dark-grey;
-  padding: 60px 0 50px 0;
+  padding: 60px 0px 0px 0px;
   width: 100%;
-  position:absolute;
-  bottom:0;
+
+  .footer-column {
+    padding-bottom: 40px;
+  }
 }
 
 .footer p {
