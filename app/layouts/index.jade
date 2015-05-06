@@ -2,30 +2,23 @@ extends ./landing_base.jade
 
 block seo
   title eConvenor  |  A tool to get activists organised
-  meta(name='description', content='A organising tool for progressive activist groups. Built by activists for activists!')
+  meta(name='description', content='An organising tool for progressive activist groups. Built by activists for activists!')
 
 block content
 
 
   // HERO
-  // ================================================== 
+  // ==================================================
   div(id='hero', class='jumbotron')
     div(class='container')
-      h1(class='text-center') Activists, get organised.
-      h2(class='text-center') Have great meetings and get things done.
-      h2(class='text-center') Built by activists for activists and it's free for small groups.
-      br  
-      div(class='text-center')
-        a(href='qualify_step1')
-          button(type='button', class='btn btn-primary-outline')
-            i(class='fa-fw fa fa-bookmark fa-lg')
-            &nbsp;Get a free account
-        br
-        br
-        h2(class='text-center')
-          i(class='fa fa-arrow-down')
-        br
-        br
+      h1 Activists, get organised.
+      h2 Have great meetings. Get more done.
+      h2 Free for small groups.
+      a(class="btn btn-white", href='qualify_step1')
+        i(class='fa-fw fa fa-bookmark fa-lg')
+        &nbsp;Get an account
+      h2
+        i(class='fa fa-arrow-down')
 
 
   // RIBBON
@@ -63,7 +56,7 @@ block content
             &nbsp;
             | Make you more effective
           p.
-            eConvenor will make sure you are clear about your decisions and 
+            eConvenor will make sure you are clear about your decisions and
             tasks, and prevent tasks being unassgned or forgotten. You'll get
             more done.
         .col-sm-4
@@ -85,7 +78,7 @@ block content
     div(class='container')
       h1(class='text-center') Sometimes the best person for the job is a computer.
       h2(class='text-center').
-        eConvenor does its work on time, has high standards and never forgets 
+        eConvenor does its work on time, has high standards and never forgets
         anything.
 
 
@@ -119,12 +112,12 @@ block content
             li
               i(class='fa-li fa fa-check-circle fa-lg red')
               | Prompts for all the important information
-  
+
           a(href='images/pdfs/example_agenda.pdf', target='_blank')
-            button(type='button', class='btn btn-primary visible-md visible-lg') 
+            button(type='button', class='btn btn-primary visible-md visible-lg')
               i(class='fa-fw fa fa-file-pdf-o fa-lg')
               &nbsp; See an example agenda
-            
+
         div(class='col-md-7')
           div(class='spacer visible-md visible-lg')
 
@@ -134,7 +127,7 @@ block content
                 div(class='item active')
                   a(class='popup-image', href='images/landing/agendas-screenshot-1-large.png')
                     img(src='images/landing/agendas-screenshot-1-small.png', alt='Agenda screenshot 1')
-                  
+
                 div(class='item')
                   a(class='popup-image', href='images/landing/agendas-screenshot-2-large.png')
                     img(src='images/landing/agendas-screenshot-2-small.png', alt='Agenda screenshot 2')
@@ -156,7 +149,7 @@ block content
         div(class='col-md-5 visible-xs visible-sm')
           p(class='lead').
             Meeting minutes are so important.
-            eConvenor makes it quick, easy and painless to 
+            eConvenor makes it quick, easy and painless to
             produce great minutes.
           ul(class='fa-ul')
             li
@@ -181,7 +174,7 @@ block content
                 div(class='item active')
                   a(class='popup-image', href='images/landing/minutes-screenshot-1-large.png')
                     img(src='images/landing/minutes-screenshot-1-small.png', alt='Agenda screenshot 1')
-  
+
                 div(class='item')
                   a(class='popup-image', href='images/landing/minutes-screenshot-2-large.png')
                     img(src='images/landing/minutes-screenshot-2-small.png', alt='Agenda screenshot 2')
@@ -193,11 +186,11 @@ block content
         div(class='col-md-4 pull-right visible-md visible-lg')
           p(class='lead').
             Meeting minutes are so important.
-            eConvenor makes it quick, easy and painless to 
+            eConvenor makes it quick, easy and painless to
             produce great minutes.
           ul(class='fa-ul')
             li
-              i(class='fa-li fa fa-repeat fa-lg red') 
+              i(class='fa-li fa fa-repeat fa-lg red')
               | Agendas automatically create minutes templates
             li
               i(class='fa-li fa fa-file-pdf-o fa-lg red')
@@ -213,10 +206,10 @@ block content
             button(type='button', class='btn btn-primary')
               i(class='fa-fw fa fa-file-pdf-o fa-lg')
               &nbsp; See some example minutes
-        
+
           a(href='images/pdfs/example_minutes.pdf', target='_blank')
             button(type='button', class='btn btn-primary visible-xs visible-sm')
-              i(class='fa-fw fa fa-file-pdf-o fa-lg') 
+              i(class='fa-fw fa fa-file-pdf-o fa-lg')
               &nbsp; See some example minutes
 
 
@@ -232,7 +225,7 @@ block content
         div(class='col-md-5')
           p(class='lead').
             Do you wish that someone else could remind people to do what they
-            said they'd do? 
+            said they'd do?
             eConvenor will do that.
           ul(class='fa-ul')
             li
@@ -253,7 +246,7 @@ block content
 
         div(class='col-md-7')
           div(class='spacer visible-md visible-lg')
-        
+
           div(id='carousel-agenda', class='carousel slide right')
             div(class='carousel-frame')
               div(class='carousel-inner')
@@ -276,7 +269,7 @@ block content
       div(class='text center')
         h1(class='text-center') Built by activists, for activists.
         h2(class='text-center').
-          eConvenor is a free service to help activist groups everywhere be more 
+          eConvenor is a free service to help activist groups everywhere be more
           effective.
 
 
@@ -297,7 +290,7 @@ block content
             We were sure there had to be a better way. We looked around but
             couldn't find anything that suited our needs or the activist budget.
           p(class='lead').
-            Taking on the DIY spirit of activism and social movements, we 
+            Taking on the DIY spirit of activism and social movements, we
             learnt new skills and made our own organising tool. It will keep
             your group organised, and most importantly, effective.
           p(class='lead').
@@ -305,6 +298,6 @@ block content
           p(class='lead') - Keira & Sky
           p(class='text-center')
             a(href='qualify_step1')
-              button(type='button', class='btn btn-primary-outline')
+              button(type='button', class='btn btn-transparent')
                 i(class='fa-fw fa fa-bookmark fa-lg')
                 &nbsp;Get a free account

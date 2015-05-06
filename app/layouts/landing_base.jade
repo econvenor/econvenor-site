@@ -47,10 +47,10 @@ html(lang='en')
             img(src='images/logo white.png', width='200', height='45', alt='An image of the eConvenor logo')
 
         .pull-right
-          a(href='qualify_step1')
-            button(type="button" class="btn btn-primary-outline") Sign up
-          a(href=loginUrl)
-            button(type="button" class="btn") Sign in
+          a(class="btn btn-transparent", href='qualify_step1')
+            | Sign up
+          a(class="btn btn-transparent", href=loginUrl)
+            | Sign in
 
 
     // CONTENT
@@ -62,7 +62,7 @@ html(lang='en')
     .footer
       .container
         .row
-          .col-xs-3
+          .col-xs-6.col-sm-3
             p(class='lead') Contact / connect
             p
               i(class="fa fa-envelope-o fa-fw")
@@ -73,7 +73,7 @@ html(lang='en')
               &nbsp;&nbsp;
               a(href='https://twitter.com/econvenor') Twitter
 
-          .col-xs-3
+          .col-xs-6.col-sm-3
             p(class='lead') More information
             p
               i(class="fa fa-question-circle fa-fw")
@@ -84,7 +84,7 @@ html(lang='en')
               &nbsp;&nbsp;
               a(href='terms') Terms and conditions
 
-          .col-xs-3
+          .col-xs-6.col-sm-3
             p(class='lead') About eConvenor
             p
               i(class="fa fa-star fa-fw")
@@ -95,7 +95,7 @@ html(lang='en')
               &nbsp;&nbsp;
               a(href='source') Source code
 
-          .col-xs-3
+          .col-xs-6.col-sm-3
             p(class='lead') Contribute
             p
               i(class="fa fa-certificate fa-fw")
