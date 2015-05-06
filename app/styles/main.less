@@ -1,3 +1,14 @@
+/* LESS IMPORTS
+-------------------------------------------------- */
+
+// Vendor
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+@import "../../bower_components/fontawesome/less/font-awesome.less";
+
+// eConvenor
+@import "variables.less";
+
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 
@@ -8,48 +19,40 @@ html {
 
 body {
   min-width: 768px;
-  color: #555555;
+  color: @dark-grey;
   font-family: 'Body', Helvetica, Arial, sans-serif;
   font-size: 18px;
   padding-top: 0px;
   margin-bottom: 232px;
-  background-color: #dddddd;
-}
-
-.orange {
-  color: #ff4544;
+  background-color: @light-grey;
 }
 
 .red {
-  color: #ff0066;
+  color: @primary;
 }
 
 .white {
-  color: #ffffff;
+  color: @white;
 }
 
 .light-grey {
-  color: #bbbbbb;
+  color: @light-grey;
 }
 
 .mid-grey {
-  color: #909090;
+  color: @mid-grey;
 }
 
 .dark-grey {
-  color: #555555;
-}
-
-.orange-background {
-  background-color: #ff4544;
+  color: @dark-grey;
 }
 
 .red-background {
-  background-color: #ff0066;
+  background-color: @primary;
 }
 
 .black-background {
-  background-color: #000000;
+  background-color: @black;
 }
 
 /* FONTS
@@ -123,10 +126,10 @@ body {
 -------------------------------------------------- */
 
 .ribbon {
-  color: #ffffff;
+  color: @white;
   padding-top: 12px;
   padding-bottom: 20px;
-  background-color: #1a1a1a;
+  background-color: @dark-grey;
 }
 
 
@@ -142,53 +145,53 @@ body {
 }
 
 .btn-primary {
-  color: #ffffff;
-  background-color: #ff0066;
-  border-color: #ff0066;
+  color: @white;
+  background-color: @primary;
+  border-color: @primary;
 
   &:hover,
   &:focus {
-    color: #ffb8d4;
-    background-color: #ff0066;
-    border-color: #ff0066;
+    color: @light-primary;
+    background-color: @primary;
+    border-color: @primary;
   }
 }
 
 .btn-default {
-  color: #ffffff;
-  background-color: #555555;
-  border-color: #555555;
+  color: @white;
+  background-color: @mid-grey;
+  border-color: @mid-grey;
 
   &:hover,
   &:focus {
-    color: #bbbbbb;
-    background-color: #555555;
-    border-color: #555555;
+    color: @light-grey;
+    background-color: @mid-grey;
+    border-color: @mid-grey;
   }
 }
 
 .btn-transparent {
-  color: #ffffff;
+  color: @white;
   background-color: transparent;
-  border-color: #ffffff;
+  border-color: @white;
 
   &:hover,
   &:focus {
-    color: #ff0066;
-    background-color: #ffffff;
+    color: @primary;
+    background-color: @white;
   }
 }
 
 .btn-white {
-  color: #ff0066;
-  background-color: #ffffff;
-  border-color: #ffffff;
+  color: @primary;
+  background-color: @white;
+  border-color: @white;
 
   &:hover,
   &:focus {
-    color: #ffffff;
-    background-color: #ff0066;
-    border-color: #ffffff;
+    color: @white;
+    background-color: @primary;
+    border-color: @white;
   }
 }
 
@@ -204,7 +207,7 @@ body {
 .jumbotron h1 {
   font-family: 'Jumbotron', Helvetica, Arial, sans-serif;
   font-size: 63px;
-  color: white;
+  color: @white;
   margin: 30px 70px 40px 70px;
 }
 
@@ -216,7 +219,7 @@ body {
 .jumbotronm h1 {
   font-family: 'Jumbotron', Helvetica, Arial, sans-serif;
   font-size: 63px;
-  color: #ff0066;
+  color: @primary;
   margin: 30px 70px 40px 70px;
 }
 
@@ -224,7 +227,7 @@ body {
   margin-top: -75px;
   margin-bottom: 0px;
   padding: 120px 30px 80px 30px;
-  background-color: #ff0066;
+  background-color: @primary;
   background-image: url(../images/magentameeting.jpg);
   background-size: cover;
 }
@@ -234,7 +237,7 @@ body {
 -------------------------------------------------- */
 
 #hero {
-  background-color: #ff0066;
+  background-color: @primary;
   margin-top: -75px;
   margin-bottom: 0px;
   padding-top: 200px;
@@ -243,12 +246,12 @@ body {
   background-position: center;
 
   h1 {
-    color: white;
+    color: @white;
     font-size: 72px;
   }
 
   h2 {
-    color: white;
+    color: @white;
   }
 }
 
@@ -256,7 +259,7 @@ body {
   #hero h1 {
     padding-top: 10px;
     font-size: 54px;
-    color: white;
+    color: @white;
   }
   #hero h2 {
     font-size: 30px;
@@ -325,7 +328,7 @@ body {
 
 .dividerb h2 {
   font-size: 1.5em;
-  color: white;
+  color: @white;
   margin-bottom: 10px;
 }
 .dividerc {
@@ -340,7 +343,7 @@ body {
 
 .dividerc h2 {
   font-size: 1.5em;
-  color: white;
+  color: @white;
   margin-bottom: 10px;
 }
 .dividerd {
@@ -355,7 +358,7 @@ body {
 
 .dividerd h2 {
   font-size: 1.5em;
-  color: white;
+  color: @white;
   margin-bottom: 10px;
 }
 
@@ -369,7 +372,7 @@ body {
 
 h1, h2 {
   font-family: 'Heading', Helvetica, Arial, sans-serif;
-  color: #333333;
+  color: @dark-grey;
   margin: 20px 10px 30px 10px;
 }
 
@@ -398,16 +401,16 @@ p {
 a,
 a:hover,
 a:focus {
-  color: #ff0066;
+  color: @primary;
 }
 
 a.email-link {
-  color: #555555;
+  color: @mid-grey;
 }
 
 a:hover.email-link,
 a:focus.email-link {
-  color: #333333;
+  color: @dark-grey;
   text-decoration: none;
 }
 
@@ -420,7 +423,7 @@ a:focus.email-link {
 -------------------------------------------------- */
 
 .errorlist {
-  color: #ff0066;
+  color: @primary;
   font-size: 0.9em;
 }
 
@@ -519,7 +522,7 @@ li p.lead {
 -------------------------------------------------- */
 
 .section {
-  background-color: white;
+  background-color: @white;
   padding-top: 50px;
   padding-bottom: 70px;
 }
@@ -543,7 +546,7 @@ li p.lead {
 }
 
 .dividing-line {
-  border-bottom: 5px solid #ff0066;
+  border-bottom: 5px solid @primary;
 }
 
 
@@ -565,7 +568,7 @@ li p.lead {
 -------------------------------------------------- */
 
 .footer {
-  background-color: #333333;
+  background-color: @dark-grey;
   padding: 60px 0 50px 0;
   width: 100%;
   position:absolute;
@@ -573,22 +576,22 @@ li p.lead {
 }
 
 .footer p {
-  color: #bbbbbb;
+  color: @light-grey;
   line-height: 1.1em;
   margin: 0 10px 10px 10px;
 }
 
 .footer p.lead{
-  color: #ffffff;
+  color: @white;
 }
 
 .footer a {
-  color: #dddddd;
+  color: @light-grey;
 }
 
 .footer a:hover,
 .footer a:focus {
-  color: #ffffff;
+  color: @white;
   text-decoration: none;
 }
 
@@ -599,7 +602,7 @@ li p.lead {
 
 /* Darken off the background */
 .mfp-bg {
-  background: #000000;
+  background: @black;
   opacity: 0.93;
   filter: alpha(opacity=93); }
 
@@ -662,7 +665,7 @@ li p.lead {
 .general .faq-body {
   margin: 15px 0px 10px 0px;
   padding: 20px 30px 10px 30px;
-  background-color: #ffffff;
+  background-color: @white;
 }
 
 .general .faq-body p,
@@ -676,15 +679,15 @@ li p.lead {
 }
 
 .general .table th {
-  color: #ffffff;
+  color: @white;
   font-weight: normal;
-  background-color: #555555;
+  background-color: @mid-grey;
   border: 3px solid #e3e3e3;
 }
 
 .general .table td {
-  color: #333333;
-  background-color: #fafafa;
+  color: @dark-grey;
+  background-color: @white;
   border: 3px solid #e3e3e3;
 }
 
@@ -701,8 +704,8 @@ li p.lead {
 }
 
 .panel-register .panel-heading {
-  color: #ffffff;
-  background-color: #555555;
+  color: @white;
+  background-color: @mid-grey;
   border: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -713,25 +716,25 @@ form .panel-heading {
 }
 
 .panel-register .panel-heading.red {
-  background-color: #ff0066;
+  background-color: @primary;
 }
 
 .panel-register .panel-heading h1 {
-  color: #ffffff;
+  color: @white;
   font-size: 1.6em;
   text-align: left;
   margin: 5px 0px 5px 8px;
 }
 
 .panel-register .panel-heading h2 {
-  color: #bbbbbb;
+  color: @light-grey;
   font-size: 1.2em;
   text-align: left;
   margin: 5px 0px 5px 10px;
 }
 
 .panel-register .panel-body p {
-  color: #333333;
+  color: @dark-grey;
   font-size: 0.85em;
   margin: 15px 10px 20px 10px;
   border-bottom-left-radius: 0px;
@@ -743,7 +746,7 @@ form .panel-heading {
 }
 
 .panel-register .panel-body li {
-  color: #333333;
+  color: @dark-grey;
   font-size: 0.85em;
   padding: 0px 0px 10px 0px;
   text-indent: -32px;
@@ -751,7 +754,7 @@ form .panel-heading {
 }
 
 .panel-register .panel-body label {
-  color: #333333;
+  color: @dark-grey;
   font-size: 0.85em;
 }
 
@@ -768,9 +771,9 @@ form .panel-heading {
 }
 
 .panel-register .btn-home {
-  color: #ffffff;
-  background-color: #999999;
-  border-color: #999999;
+  color: @white;
+  background-color: @mid-grey;
+  border-color: @mid-grey;
 }
 
 .fa-md {
@@ -783,18 +786,18 @@ form .panel-heading {
 }
 
 .panel-register .table th {
-  color: #ffffff;
+  color: @white;
   font-size: 0.85em;
   font-weight: normal;
-  background-color: #555555;
-  border: 3px solid #ffffff;
+  background-color: @mid-grey;
+  border: 3px solid @white;
 }
 
 .panel-register .table td {
-  color: #333333;
+  color: @dark-grey;
   font-size: 0.80em;
-  background-color: #e3e3e3;
-  border: 3px solid #ffffff;
+  background-color: @light-grey;
+  border: 3px solid @white;
 }
 
 .panel-register .form-group {
@@ -807,26 +810,26 @@ form .panel-heading {
 }
 
 .panel-register .form-control:focus {
-  border-color: #ff0066;
+  border-color: @primary;
   outline: 0;
   -webkit-box-shadow: inset 0 0 0 rgba(255,0,102,0), 0 0 0 rgba(255, 0, 102, .4);
           box-shadow: inset 0 0 0 rgba(255,0,102,0), 0 0 0 rgba(255, 0, 102, .4);
 }
 
 .modal-header {
-  background-color: #ff0066;
+  background-color: @primary;
 }
 
 .modal-header h1 {
-  color: #ffffff;
+  color: @white;
   font-size: 1.6em;
   text-align: left;
 }
 
 .form-group label.error {
   margin-top: 6px;
-  color: #ff0066;
-  border-color: #ff0066;
+  color: @primary;
+  border-color: @primary;
   font-weight: normal;
   font-size: 1em;
 }
@@ -839,13 +842,13 @@ form .panel-heading {
   margin-top: 6px;
   margin-left: -5px;
   list-style-type: none;
-  color: #ff0066;
+  color: @primary;
   font-weight: normal;
   font-size: 1.1em;
 }
 
 .form-group {
-  color: #999999;
+  color: @mid-grey;
   font-size: 0.9em;
 }
 
@@ -872,8 +875,8 @@ form .panel-heading {
   width:50%;
   z-index:10000;
   text-align:center;
-  color:#ffffff;
-  background-color:#ff0066;
+  color:@white;
+  background-color:@primary;
   padding: 30px 0 20px 0;
 }
 
@@ -884,7 +887,7 @@ left: 0;
 width: 100%;
 height: 100%;
 z-index: 9999;
-background-color: #000000;
+background-color: @black;
 opacity: 0.80;
 }
 
@@ -893,7 +896,7 @@ opacity: 0.80;
 
 .browserupgrade {
   margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
+  background: @light-grey;
+  color: @black;
   padding: 0.2em 0;
 }
