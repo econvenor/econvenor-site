@@ -145,8 +145,8 @@ body {
   }
 
   .btn {
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
 
   @media (max-width: 1000px) {
@@ -209,60 +209,55 @@ body {
 /* DIVIDERS
 -------------------------------------------------- */
 
-.dividerb {
-  margin-bottom: 0px;
-  background-image: url(../images/magentanotes2.jpg);
-  background-size: cover;
-}
-
-.dividerb h1 {
-  font-size: 2.5em;
-  margin: 0px 40px 0px 40px;
-}
-
-.dividerb h2 {
-  font-size: 1.5em;
-  color: @white;
-  margin-bottom: 10px;
-}
-.dividerc {
-  background-size: cover;
-  background-image: url(../images/bwbookcomputer.jpg);
-}
-.dividera,
-.dividerc {
-  background-color: @dark-grey;
-  margin-bottom: 0px;
+.divider {
 
   h1 {
     font-size: 2.5em;
     margin: 0px 40px 0px 40px;
+    color: @white;
   }
 
   h2 {
     font-size: 1.5em;
-    color: @white;
     margin-bottom: 10px;
+    color: @white;
+  }
+
+  @media (max-width: 1000px) {
+    h1 {
+      padding-top: 10px;
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+
+  @media (max-width: 810px) {
+    h1 {
+      padding-top: 0px;
+      font-size: 1.5em;
+    }
+    h2 {
+      font-size: 1.0em;
+    }
   }
 }
-.dividerd {
-  margin-bottom: 0px;
-  background-image: url(../images/magentanotes.jpg);
+
+#dividera {
+  background-color: @dark-grey;
+}
+
+#dividerb {
+  background-color: @primary;
+  background-image: url(../images/magentanotes2.jpg);
   background-size: cover;
 }
-.dividerd h1 {
-  font-size: 2.5em;
-  margin: 0px 40px 0px 40px;
-}
 
-.dividerd h2 {
-  font-size: 1.5em;
-  color: @white;
-  margin-bottom: 10px;
-}
-
-#divider4 h1 {
-  margin-bottom: 35px;
+#dividerc {
+  background-color: @dark-grey;
+  background-size: cover;
+  background-image: url(../images/bwbookcomputer.jpg);
 }
 
 
