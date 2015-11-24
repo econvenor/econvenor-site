@@ -2,9 +2,9 @@
   "name": "econvenor-site",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.1",
-    "bootstrap": "~3.3.4",
-    "fontawesome": "~4.3.0",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "fontawesome": "~4.5.0",
     "magnific-popup": "~1.0.0"
   }
 }
