@@ -9,7 +9,7 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 gulp.task('views', () => {
-  return gulp.src('app/layouts/*.jade')
+  return gulp.src('app/layouts/*.pug')
     .pipe($.plumber())
     .pipe($.pug({pretty: true}))
     .pipe(gulp.dest('.tmp'))
@@ -95,7 +95,7 @@ gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',
     '!app/*.html',
-    '!app/**/*.jade'
+    '!app/**/*.pug'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));
@@ -121,7 +121,7 @@ gulp.task('serve', ['views', 'styles', 'scripts', 'fonts'], () => {
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
-  gulp.watch('app/**/*.jade', ['views']);
+  gulp.watch('app/**/*.pug', ['views']);
   gulp.watch('app/styles/**/*.less', ['styles']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);
@@ -165,7 +165,7 @@ gulp.task('wiredep', () => {
     }))
     .pipe(gulp.dest('app/styles'));
 
-  gulp.src('app/layouts/*.jade')
+  gulp.src('app/layouts/*.pug')
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)*\.\./
     }))

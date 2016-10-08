@@ -29,7 +29,7 @@ Step 2 - Get local Node packages and Bower frameworks
     $ npm install
     $ bower install
 
-Step 3 - Serve the site with Gulp 
+Step 3 - Serve the site with Gulp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -38,5 +38,5 @@ Step 3 - Serve the site with Gulp
 
 This will serve the site at `localhost:9000 <http://localhost:9000>`_.
 
-Each time you save a ``.jade`` or ``.less`` file, the site should update
+Each time you save a ``.pug`` or ``.less`` file, the site should update
 automatically.

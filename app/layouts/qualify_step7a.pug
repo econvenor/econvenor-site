@@ -1,4 +1,4 @@
-extends ./registration_base.jade
+extends ./registration_base.pug
 
 block heading
   h1
@@ -6,13 +6,14 @@ block heading
       i(class="fa fa-circle fa-stack-2x white")
       i(class="fa fa-star fa-stack-1x blue")
     | &nbsp;
-    | Set up an account
+    | Set up and account
 
 block subheading
   | The last step&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Step 7 of 7
 
 block content
-  p(class="lead") Please confirm the following to set up your account:
+
+  p(class="lead") Please confirm the following to set up your trial account:
     ul
       li
         i(class="fa fa-arrow-circle-right fa-lg fa-fw blue") &nbsp;
@@ -20,9 +21,11 @@ block content
       li
         i(class="fa fa-arrow-circle-right fa-lg fa-fw blue") &nbsp;
         | I agree to eConvenor's terms and conditions
-
+      li
+        i(class="fa fa-arrow-circle-right fa-lg fa-fw blue") &nbsp;
+        | I understand that after the trial period a fee will apply.
   div(class="pull-right")
-    a(href="qualify_step6" class="btn btn-default")
+    a(href="qualify_step6_5" class="btn btn-default")
       i(class="fa fa-arrow-circle-left fa-lg fa-fw") &nbsp;
       | Back
 
@@ -30,6 +33,6 @@ block content
       i(class="fa fa-times-circle fa-lg fa-fw") &nbsp;
       | Quit
 
-    a(href=registerUrl class="btn btn-primary")
+    a(href=registerTrialUrl class="btn btn-primary")
       i(class="fa fa-check-circle fa-lg fa-fw") &nbsp;
       | I agree
