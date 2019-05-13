@@ -17,7 +17,6 @@
 html {
   position: relative;
   background-color: @white;
-  min-width: 480px;
   min-height: 100%;
 }
 
@@ -27,8 +26,56 @@ body {
   font-size: 18px;
   padding-top: 0px;
   background-color: @white;
-  margin-bottom: 250px;
+  margin-bottom: 130px;
+  padding-bottom: 25px;
 }
+
+@media (max-width: 767px) {
+  .small-margin {
+    margin-top: 10px;
+    float: none !important;
+    align-items: center !important;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .heading-margin {
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    margin-bottom: 160px;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    margin-bottom: 220px;
+  }
+}
+
+@media (max-width: 960px) {
+  body {
+    margin-bottom: 230px;
+  }
+}
+
+@media (max-width: 810px) {
+  body {
+    margin-bottom: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    margin-bottom: 400px;
+  }
+}
+
 
 .red {
   color: @primary;
@@ -72,14 +119,22 @@ body {
   padding-bottom: 0px;
   border-bottom: 0px solid transparent;
   background-color: none;
+  padding-top: 10px;
 }
 
-.navbar .container {
-  min-width: 480px;
-}
 
 .navbar-brand img {
   margin-left: 8px;
+}
+
+.navbar-brand-small {
+  @media (max-width: 767px) {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    float: none !important;
+    align-items: center !important;
+    text-align: center;
+  }
 }
 
 .navbar .btn {
@@ -116,6 +171,10 @@ body {
   font-size: 63px;
   color: @white;
   margin: 30px 70px 40px 70px;
+  @media (max-width: 767px) {
+    margin: 20px 20px 20px 20px;
+    font-size: 43px;
+  }
 }
 
 .jumbotron-header {
@@ -181,37 +240,26 @@ body {
 
 /* CAROUSELS
 -------------------------------------------------- */
-
-.carousel.right {
-  float: right !important;
+.carousel-inner {
+  border-radius: 3px;
+  box-shadow: 3px 6px 6px #004554;
 }
 
-.carousel-frame {
-  background-image: url(../images/landing/carousel-frame-large.png);
-  background-position: center center;
-  width: 670px;
-  height: 443px;
-  padding: 26px 50px;
-}
-
-@media (max-width: 1200px) {
-  .carousel-frame {
-    background-image: url(../images/landing/carousel-frame-medium.png);
-    width: 550px;
-    height: 364px;
-    padding: 22px 40px;
+@media (max-width: 600px) {
+  .carousel.right {
+    float: right !important;
   }
 }
 
-@media (max-width: 992px) {
-  .carousel {
-    margin: 10px 0 25px 0;
-  }
+@media (min-width: 600px) {
   .carousel.right {
     float: left !important;
   }
 }
 
+.carousel.left {
+  float: left !important;
+}
 
 /* DIVIDERS
 -------------------------------------------------- */
@@ -258,8 +306,12 @@ body {
   color: white;
 
   p {
-  font-size: 120%;
+    font-size: 120%;
   }
+}
+
+.dividera {
+  padding-top: 10px;
 }
 
 #dividerb {
@@ -436,7 +488,7 @@ li p.lead {
 }
 
 #section1b {
-  background-color: @blue;
+  background-color: @mid-blue;
   color: @white;
   h2 {
     color: @white;
@@ -459,7 +511,7 @@ li p.lead {
 
 .section .btn,
 .sectionb .btn {
-  margin: 20px 0 0 12px;
+  margin: 20px 0 0 0;
 }
 
 .dividing-line {
@@ -469,6 +521,10 @@ li p.lead {
 #signature {
   padding: 10px 0px 0px 0px;
   width: 300px;
+  margin-left: 5px;
+  @media (max-width: 767px) {
+    width: 200px;
+  }
 }
 
 
@@ -493,11 +549,15 @@ li p.lead {
   position: absolute;
   bottom: 0;
   background-color: @blue;
-  padding: 60px 0px 0px 0px;
+  padding: 30px;
   width: 100%;
 
   .footer-column {
-    padding-bottom: 40px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    @media (max-width: 767px) {
+      margin-left: 10px;
+    }
   }
 }
 
@@ -547,7 +607,6 @@ li p.lead {
 }
 
 .general h1 {
-  text-align: left;
   font-size: 3em;
   margin: 20px 10px 20px 10px;
 }
@@ -853,4 +912,46 @@ opacity: 0.80;
   background: @light-grey;
   color: @black;
   padding: 0.2em 0;
+}
+
+/* PRICING PAGE
+-------------------------------------------------- */
+.price-list {
+  li {
+    font-size: 90%;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    list-style-type: disc;
+  }
+}
+.panel.pricing {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-color: @blue !important;
+  border-width: thin !important;
+  border-style: double;
+  border-radius: 3px;
+  box-shadow: 3px 6px 9px #999999;
+
+  .panel-heading {
+    min-height: 150px;
+    border-color: @blue !important;
+    border-width: thin !important;
+  }
+  p {
+    font-size: 90%;
+  }
+}
+
+/* PRIVACY and TERMS
+-------------------------------------------------- */
+.sub-list {
+  li {
+    padding-top: 5px;
+    list-style-type: disc;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
 }

@@ -1,12 +1,3 @@
 User-agent: *
 Disallow: /login/
 Disallow: /register/
-Disallow: /qualify_step1
-Disallow: /qualify_step2
-Disallow: /qualify_step3
-Disallow: /qualify_step4
-Disallow: /qualify_step5
-Disallow: /qualify_step6
-Disallow: /qualify_step6_5
-Disallow: /qualify_step7
-Disallow: /qualify_step7a

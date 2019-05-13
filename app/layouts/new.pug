@@ -1,0 +1,80 @@
+extends ./landing_base.pug
+
+block seo
+  title Meetniq  |  New
+  meta(name='description', content="New")
+
+block content
+
+  // PAGE HEADER
+  // ==================================================
+  div(class='jumbotron jumbotron-header general')
+    div(class='container')
+      h1(class='text-center heading-margin') What's new?
+
+  // BODY
+  div(class="section general")
+    div(class="container")
+      div(class="row")
+        div(class="col-md-10")
+          p.lead.
+            You might have noticed some changes around here lately!
+          p.lead.
+            We're always trying to improve, and here's what we've done recently,
+            and what it means for you.
+            
+      // NEW NAME
+      // ==================================================
+      div(class="row")
+        div(class="col-md-10")
+          h2(class="red") Goodbye eConvenor, hello Meetniq!
+          p 14 June 2019
+          p.lead What's changed and why?
+          p.
+            If you've used this service before May 2019, you'll know that we
+            used to be called eConvenor. Our new name is Meetniq. We pronounce
+            it <i>meet-nik</i>.
+          p.
+            We changed it because as we get more users in more parts of the
+            world, we realised that not everyone knows what a 'convenor' is,
+            so the name eConvenor was confusing. Also, we just liked the sound
+            of the new one.
+    
+
+      // NEW FEATURES
+      // ==================================================
+      div(class="row")
+        div(class="col-md-10")
+          h2(class="red") Latest feature
+            
+          p.lead.red Shared Tasks
+          p 1 May 2019
+          p.
+            Tasks can now be shared among several people in your group. You
+            will simply need to add the names when you create a task, and
+            choose one person to coordinate the task and mark it complete.
+          
+          h2(class="red") Coming soon
+
+          p.lead.red Attachments
+          p June 2019
+          p.
+            You'll be able to add attachments to your minutes and agendas.
+            You'll have up to 7MB in attachments on any minute or agenda. 
+            It's not big, but the size limit
+            is because some email services won't allow
+            bigger emails (including the email and it's attachments).
+      
+  // DIVIDER C
+  // ==================================================
+  div(class='jumbotron divider' id='dividerc')
+    div(class='container')
+      h1(class='text-center') Born of frustration, built with hope.
+      h2(class='text-center').
+        Meetniq makes your meetings more effective, and helps you keep track.
+      br
+      p(class='text-center')
+        a(href='https://app.meetniq.org/create-account')
+          button(type='button', class='btn btn-primary btn-lg')
+            i(class='fa-fw fa fa-bookmark fa-lg')
+            | &nbsp;Get an account

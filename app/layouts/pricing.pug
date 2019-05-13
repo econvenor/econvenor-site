@@ -1,69 +1,149 @@
 extends ./landing_base.pug
 
 block seo
-  title eConvenor  |  Unions and political parties
-  meta(name="description" content="Contact eConvenor.")
+  title Meetniq  |  Pricing
+  meta(name="description" content="Contact Meetniq.")
 
 block content
 
   //PAGE HEADER
   //==================================================
-  div(class="jumbotron jumbotron-header divider general")
+  div(class="jumbotron jumbotron-header general")
     div(class="container")
-      h1(class="text-center") Unions and political parties
+      h1(class="text-center heading-margin") Pricing
 
   //BODY
   //==================================================
   div(class="section general")
     div(class="container")
       div(class="row")
-        div(class="col-md-10")
-          h2(class="red") Account pricing
-          p.
-            Unions and political parties in high-income, reasonably democratic countries 
-            who use eConvenor must pay a fee to support the project. You can set up a 
-            free 30-day trial account to evaluate the service first &mdash; press the 
-            sign up button above and follow the prompts.
-            
-          table(class="table table-bordered")
-            tbody
-              tr
-                th Basic
-                th Standard
-                th Extra
+        div(class="col-md-3 col-sm-4 col-xs-12")
+          div(class="panel pricing")
+            div(class="panel-heading text-center")
+              h3(class="red") Grassroots
+              h4(class="red") Free forever
+              small up to 20 groups
+            div(class="panel-body")
+              p.
+                Full Meetniq access for free, forever, for small, local, and 
+                marginalised groups.
+              p.
+                Meetniq is free for organisations that:
+              ul.price-list
+                li are engaged in community organising or campaigning, <b>and</b>
+                li are not-for profit, <b>and</b>
+                li.
+                  have a main goal that is in <a href="#purposes">
+                  our list</a> below.
+              p.
+                And that:
+              ul.price-list
+                li are controlled by first-nations people, <b>or</b>
+                li are based in a low-income country, <b>or</b>
+                li have fewer than 2 full-time staff (or equivalent).
+              div(class='text-center')  
+                a(class="btn btn-red btn-md text-center", href='#')
+                  | &nbsp;Start now
 
-              tr
-                td $5 per month, paid annually
-                td $7 per group per month, paid annually
-                td $15 per group per month, paid annually
+        div(class="col-md-3 col-sm-4 col-xs-12")
+          div(class="panel pricing")
+            div(class="panel-heading text-center")
+              h3(class="red") Sustainability
+              h4(class="red") $9 per group, per month
+              small billed annually, or $10.20 billed monthly, for up to 20 groups
+            div(class="panel-body")
+              p.
+                For larger organising bodies. Your funds help us sustainably
+                support small, local groups.
+              p.
+                Free 60 day trial.
+              p This plan is for organisations that:
+              ul.price-list
+                li are engaged in community organising or campaigning, <b>and</b>
+                li are not-for-profit, <b>and</b>
+                li.
+                  have a main goal that is in <a href="#purposes">
+                  our list</a> below.
+              p And that:
+              ul.price-list
+                li are trade unions, <b>or</b>
+                li are political parties, <b>or</b>
+                li have 2 or more full-time staff (or equivalent)
+              div(class='text-center')    
+                a(class="btn btn-red btn-md text-center", href='https://app.meetniq.org/create-account')
+                  | &nbsp;Start your free trial
+          
+        div(class="col-md-3 col-sm-4 col-xs-12")
+          div(class="panel pricing")
+            div(class="panel-heading text-center")
+              h3(class="red") Custom
+              h4(class="red") Contact us
+              small more than 20 groups
+            div(class="panel-body")
+              p.
+                Really big organisation? Need more?
+              p.
+                If your group or organisation needs more participants, more
+                groups, or more support, get in touch.
+              div(class='text-center')
+                a(class="btn btn-red btn-md text-center", href='https://app.meetniq.org/create-account')
+                  | &nbsp;Contact Us
 
-              tr
-                td $6 paid monthly
-                td $8.40 paid monthly
-                td $18 paid monthly
+        div(class="col-md-3 col-sm-4 col-xs-12")
+          div(class="panel pricing")
+            div(class="panel-heading text-center")
+              h3(class="red") For-profit
+              h4(class="red") from $12 per month
+              small at <a href="https://meetniq.com">meetniq.com</a>
+            div(class="panel-body")
+              p.
+                If your group or organisation is for-profit or doesn't fit into
+                the Grassroots or Sustainability categories, you will find your
+                plan at <a href="https://meetniq.com">Meetniq.com</a>.
+              p.
+                Meetniq.org is a for-purpose service supported by Meetniq.com.
+              p.
+                Meetniq paid plans support free access for community and 
+                campaigning groups.
+              div(class='text-center')
+                a(class="btn btn-red btn-md text-center", href='https://app.meetniq.org/create-account')
+                  | &nbsp;Find your plan
 
-              tr
-                td up to 3 meetings per month
-                td unlimited meetings
-                td unlimited meetings
+      div(class="row")
+        h2(id="purposes" class="red") Purposes
+        p.
+          Meetniq.org is for groups who are helping make the world
+          a better place by:
+        ul(class="sub-list")
+          div(class='col-md-6')
+            li addressing the climate emergency
+            li creating gender equality
+            li eradicating poverty
+            li improving workers rights
+            li other environmental protection aims
+            li LGBTIQ rights and wellbeing
+            li justice reform
+          div(class='col-md-6')    
+            li voting rights and access
+            li equality for disabled and/or neurodiverse people
+            li eradicating racism
+            li challenging colonialism, fascism, war and capitalism
+            li non-human animal rights
+            li fighting for equality, access or justice for any marginalised group.
 
-              tr
-                td 1 group only, up to 10 people
-                td up to 20 people per group
-                td unlimited people
-
-              tr
-                td 
-                td email support
-                td priority email support, gauranteed service time
-
-              tr
-                td 
-                td standard metrics
-                td premium metrics
-
-
-          h2(class="red") Exemptions
-
-          p If you're a very small union or political party and we really like what you stand for, we may bend this rule and provide you with free access to eConvenor. Feel free to <a href="mailto:fees@econvenor.org?subject=Fee+exemption+enquiry">email us</a>&nbsp;to put your case.
-          p If you're a union or political party in a lower-income or less democratic country, you can use eConvenor free of charge.
+      div(class="row")
+        h2(class="red") Don't quite fit?
+        p.
+          We don't want any progressive organising group to be excluded from
+          Meetniq because of funding problems. 
+        p.
+          If your organisation meets the other requirements but:
+        ul(class="sub-list")
+          li has a progressive purpose that isn't in our list, or
+          li fits the Sustainability plan but can't afford to pay
+        p.
+          then email us at <a href="mailto:mail@meetniq.org">mail@meetniq.org</a>
+          and we'll see what we can do.
+        p.
+          Make sure to tell us what the purposes of your group are, where you
+          are located, and why you need cheaper access.

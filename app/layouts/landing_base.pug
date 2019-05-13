@@ -1,5 +1,5 @@
 - var prefix = (process.env.NODE_ENV == 'production') ? '' : process.env.NODE_ENV
-- var loginUrl = 'https://' + prefix + 'app.econvenor.org/login'
+- var loginUrl = 'https://' + prefix + 'app.meetniq.org/login'
 
 doctype html
 
@@ -13,7 +13,7 @@ html(lang='en')
 
     block seo
 
-    link(rel='shortcut icon', href='images/econvenor-favicon-v1.ico')
+    link(rel='shortcut icon', href='images/meetniq-favicon-v1.ico')
 
     // Spacing comment to stop css bundling clobbering favicon when building
 
@@ -41,15 +41,19 @@ html(lang='en')
 
     .navbar.navbar-static-top
       .container
-        span(class='navbar-brand')
-          a(href='/')
-            img(src='images/logo white.png', width='200', height='45', alt='An image of the eConvenor logo')
-
-        .pull-right
-          a(class="btn btn-transparent", href='qualify_step1')
-            | Sign up
-          a(class="btn btn-transparent", href=loginUrl)
-            | Sign in
+        .row
+          .col-xs-12.col-sm-6
+            .navbar-brand-small
+              span(class='navbar-brand navbar-brand-small')
+                a(href='/')
+                  img(src='images/meetniq-logo-white-v1p.svg', alt='An image of the Meetniq logo'
+                      style="height: 77px; width: 80px;")
+          .col-xs-12.col-sm-6
+            .pull-right.small-margin
+              a(class="btn btn-transparent", href='https://app.meetniq.org/create-account')
+                | Sign up
+              a(class="btn btn-transparent", href=loginUrl)
+                | Sign in
 
 
     // CONTENT
@@ -61,57 +65,57 @@ html(lang='en')
     .footer
       .container
         .row
-          .col-md-3.footer-column
-            p(class='lead') Contact / connect
-            p
-              i(class="fa fa-envelope-o fa-fw")
-              | &nbsp;&nbsp;
-              a(href='contact') Email
-            p
-              i(class="fa fa-twitter fa-fw")
-              | &nbsp;&nbsp;
-              a(href='https://twitter.com/econvenor', target='_blank') Twitter
+          .col-sm-6.footer-column
+            .col-md-6.footer-column
+              p(class='lead') Contact / connect
+              p
+                i(class="fa fa-envelope-o fa-fw")
+                | &nbsp;&nbsp;
+                a(href='mailto:mail@meetniq.org') Email
+              p
+                i(class="fa fa-twitter fa-fw")
+                | &nbsp;&nbsp;
+                a(href='https://twitter.com/meetniq', target='_blank') Twitter
 
-          .col-md-3.footer-column
-            p(class='lead') More information
-            p
-              i(class="fa fa-question-circle fa-fw")
-              | &nbsp;&nbsp;
-              a(href='questions') Common questions
-            p
-              i(class="fa fa-file-text fa-fw")
-              | &nbsp;&nbsp;
-              a(href='terms') Terms and conditions
+            .col-md-6.footer-column
+              p(class='lead') Policies
+              p
+                i(class="fa fa-file-text fa-fw")
+                | &nbsp;&nbsp;
+                a(href='terms') Terms
+              p
+                i(class="fa fa-key fa-fw")
+                | &nbsp;&nbsp;
+                a(href='privacy') Privacy
+              p
+                i(class="fa fa-lock fa-fw")
+                | &nbsp;&nbsp;
+                a(href='gdpr') GDPR
 
-          .col-md-3.footer-column
-            p(class='lead') About eConvenor
-            p
-              i(class="fa fa-bookmark fa-fw")
-              | &nbsp;&nbsp;
-              a(href='features') Features
-            p
-              i(class="fa fa-star fa-fw")
-              | &nbsp;&nbsp;
-              a(href='project') The eConvenor project
-            p
-              i(class="fa fa-code fa-fw")
-              | &nbsp;&nbsp;
-              a(href='source') Source code
 
-          .col-md-3.footer-column
-            p(class='lead') Contribute
-            p
-              i(class="fa fa-certificate fa-fw")
-              | &nbsp;&nbsp;
-              a(href='volunteer') Work on eConvenor
-            p
-              i(class="fa fa-usd fa-fw")
-              | &nbsp;&nbsp;
-              a(href='donate') Donate money
-            p
-              i(class="fa fa-th-large fa-fw")
-              | &nbsp;&nbsp;
-              a(href='pricing') Unions & political parties
+          .col-sm-6.footer-column
+            .col-md-6.footer-column
+              p(class='lead') About Meetniq
+              p
+                i(class="fa fa-bookmark fa-fw")
+                | &nbsp;&nbsp;
+                a(href='features') Features
+              p
+                i(class="fa fa-star fa-fw")
+                | &nbsp;&nbsp;
+                a(href='project') The Meetniq project
+
+            .col-md-6.footer-column
+              p(class='lead') Pricing plans
+              p
+                i(class="fa fa-th-large fa-fw")
+                | &nbsp;&nbsp;
+                a(href='pricing') Pricing
+              p
+                i(class="fa fa-certificate fa-fw")
+                | &nbsp;&nbsp;
+                a(href='https://meetniq.com') Meetniq for business
+
 
     // ==================================================
 

@@ -1,0 +1,34 @@
+extends ./landing_base.pug
+
+block seo
+  title Meetniq   GDPR
+  meta(name="description", content="Meetniq's sub-processors.")
+
+block content
+
+  //PAGE HEADER
+  //==================================================
+  div(class="jumbotron jumbotron-header general")
+    div(class="container")
+      h1(class="text-center heading-margin") Meetniq's sub-processors
+
+
+  //BODY
+  //==================================================
+  div(class="section general")
+    div(class="container")
+      div(class="row")
+        div(class="col-md-10")
+            h2(class="red") Sub-processors
+            p.
+              Meetniq uses sub-processors to process some of your data for
+              various purposes. We might change our sub-processors from time
+              to time, and if we know you are covered by GDPR, we will let you
+              know, as described in our <a href="dpa">Data Processing Addendum
+              </a>.
+            ul.sub-list
+              li.
+                <b>WebFaction</b> provides the servers that Meetniq runs on.
+              li.
+                <b>Digital Ocean</b> provides the server for error monitoring.
+                
